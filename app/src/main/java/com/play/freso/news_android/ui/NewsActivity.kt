@@ -1,11 +1,12 @@
-package com.play.freso.news_android
+package com.play.freso.news_android.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.play.freso.news_android.R
 
-class MainActivity : AppCompatActivity() {
+class NewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_news)
     }
 }
