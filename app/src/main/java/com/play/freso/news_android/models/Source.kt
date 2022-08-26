@@ -1,4 +1,4 @@
-package com.play.freso.news_android
+package com.play.freso.news_android.models
 
 data class Source(
     val id: String,

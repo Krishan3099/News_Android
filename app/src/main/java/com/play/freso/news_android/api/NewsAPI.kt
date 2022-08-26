@@ -1,6 +1,6 @@
 package com.play.freso.news_android.api
 
-import com.play.freso.news_android.NewsResponse
+import com.play.freso.news_android.models.NewsResponse
 import com.play.freso.news_android.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

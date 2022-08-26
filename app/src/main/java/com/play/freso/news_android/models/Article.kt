@@ -1,8 +1,7 @@
-package com.play.freso.news_android
+package com.play.freso.news_android.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.play.freso.news_android.Source
 
 
 @Entity(
