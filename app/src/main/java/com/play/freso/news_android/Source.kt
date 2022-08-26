@@ -1,4 +1,4 @@
-package com.play.freso.news_android.ui
+package com.play.freso.news_android
 
 data class Source(
     val id: String,
