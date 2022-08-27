@@ -43,6 +43,10 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.play.freso.news_android.ui.fragments.ArticleFragment"
-        android:label="ArticleFragment" />
+        android:label="ArticleFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.play.freso.news_android.models.Article" />
+    </fragment>
 
 </navigation>

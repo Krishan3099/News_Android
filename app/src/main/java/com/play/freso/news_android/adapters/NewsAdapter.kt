@@ -57,7 +57,7 @@ class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>(){
             tvPublishedAt.text = listDiffer.currentList[position].publishedAt
             Glide
                 .with(this.root)
-                .load(listDiffer.currentList[position].url)
+                .load(listDiffer.currentList[position].urlToImage)
                 .into(ivArticleImage)
             setOnItemClickListener {
                 onItemClickListener?.let{it(listDiffer.currentList[position])}
