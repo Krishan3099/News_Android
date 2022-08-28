@@ -3,6 +3,7 @@ package com.play.freso.news_android.ui
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.play.freso.news_android.models.Article
 import com.play.freso.news_android.models.NewsResponse
 import com.play.freso.news_android.repository.NewsRepository
 import com.play.freso.news_android.util.Resource
@@ -55,5 +56,12 @@ class NewsViewModel(
         }
         return Resource.Error(response.message())
     }
+
+    fun saveArticle(article: Article) = viewModelScope.launch { newsRepository.insertArticle(article) }
+
+
+    fun getSavedArticles() = newsRepository.getSavedNews()
+
+    fun deleteArticle(article: Article) = viewModelScope.launch { newsRepository.deleteArticle(article) }
 
 }

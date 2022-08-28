@@ -5,6 +5,7 @@ import android.view.View
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.google.android.material.snackbar.Snackbar
 import com.play.freso.news_android.R
 import com.play.freso.news_android.databinding.FragmentArticleBinding
 import com.play.freso.news_android.databinding.FragmentSavedNewsBinding
@@ -26,6 +27,11 @@ class ArticleFragment: Fragment(R.layout.fragment_article) {
             webViewClient = WebViewClient()
             loadUrl(article.url)
         }
+        binding.fab.setOnClickListener{
+            viewModel.saveArticle(article)
+            Snackbar.make(view, "Article saved successfully", Snackbar.LENGTH_SHORT).show()
+        }
+
     }
 
 }
